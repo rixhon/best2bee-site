@@ -1,0 +1,22 @@
+---
+description: Read project context before making code or documentation changes
+alwaysApply: true
+---
+
+# Pre-Change Context
+
+Before making any project change, gather the relevant context first.
+
+Minimum checklist:
+
+- Read `docs/architecture/final-architecture.md` before structural or implementation changes.
+- Read the relevant project docs in `docs/`.
+- Understand the existing architecture before editing files.
+- Respect established patterns in `docs/architecture/final-architecture.md`, `docs/architecture.md`, and `docs/code-standards.md`.
+- Keep visual work consistent with `docs/design-system/README.md` and `src/data/design-system.md`.
+- Check existing components before creating new ones.
+- Update documentation when the change affects behavior, structure, components, integrations, or visual patterns.
+- Register important changes in `CHANGELOG.md`.
+- Create or update an ADR for structural decisions or meaningful trade-offs.
+
+If the change is small, read only the docs directly related to the touched area. If the change is architectural, read final architecture, current state, ADRs, changelog, and the relevant domain docs before editing.

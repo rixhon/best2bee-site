@@ -6,10 +6,10 @@ export const SITE_CONFIG = {
 
 export const NAV_ITEMS = [
   { label: "Inicio", href: "#hero" },
-  { label: "Sobre", href: "#about" },
-  { label: "Beneficios", href: "#benefits" },
-  { label: "Servicos", href: "#services" },
-  { label: "Contato", href: "#contact" },
+  { label: "Problema", href: "#problem" },
+  { label: "Solucao", href: "#solution" },
+  { label: "Processo", href: "#work" },
+  { label: "CTA", href: "#cta" },
 ] as const;
 
 export const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL ?? "";

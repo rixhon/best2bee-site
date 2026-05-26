@@ -1,0 +1,26 @@
+---
+description: Require ADRs for structural or architectural decisions
+alwaysApply: true
+---
+
+# Architecture Decisions
+
+Create an ADR when a change affects project structure, dependencies, design boundaries, deployment flow, integration strategy, or long-term maintainability.
+
+Use:
+
+```bash
+npm run adr:new -- "Decision title"
+```
+
+Then complete the generated file in `docs/architecture/decisions/`.
+
+Create or update an ADR for:
+
+- new architectural pattern;
+- new dependency with project impact;
+- folder restructuring;
+- change in animation, styling, data, deploy, or integration strategy;
+- decision that has meaningful trade-offs.
+
+Do not create ADRs for tiny implementation details or one-off bug fixes.

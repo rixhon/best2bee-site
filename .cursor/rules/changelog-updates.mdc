@@ -1,0 +1,23 @@
+---
+description: Update changelog for important project changes
+alwaysApply: true
+---
+
+# Changelog Updates
+
+For every important change, add an entry to `CHANGELOG.md` under `Unreleased`.
+
+Use:
+
+```bash
+npm run changelog:add -- --type feature --message "Change description"
+```
+
+Allowed types:
+
+- `feature`: new capability;
+- `improvement`: enhancement to existing behavior, docs, tooling, or structure;
+- `fix`: bug fix;
+- `breaking`: incompatible behavior or API change.
+
+Keep entries user-facing and concise. Avoid logging noise such as formatting-only edits unless they affect maintainability or operation.

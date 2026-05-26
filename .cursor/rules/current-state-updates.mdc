@@ -1,0 +1,25 @@
+---
+description: Keep current-state documentation updated with project progress
+alwaysApply: true
+---
+
+# Current State Updates
+
+Update `docs/current-state.md` when a task changes project status.
+
+Move items between:
+
+- `Funcionalidades Prontas`
+- `Em Andamento`
+- `Backlog`
+- `Bugs Conhecidos`
+- `Proximas Etapas`
+
+Examples:
+
+- A placeholder section becomes implemented: move it from backlog/in progress to ready.
+- A known defect is found: add it under bugs known with concise context.
+- A dependency on external data appears: add it to in progress or backlog.
+- A major documentation/tooling capability is added: record it as ready.
+
+Keep the file factual. Do not add aspirational items as completed.

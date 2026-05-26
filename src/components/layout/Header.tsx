@@ -20,7 +20,7 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <a className={buttonClassName()} href="#contact">
+        <a className={buttonClassName()} href="#cta">
           Falar com especialista
         </a>
       </Container>

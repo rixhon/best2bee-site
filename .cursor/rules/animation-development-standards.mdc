@@ -1,0 +1,22 @@
+---
+description: Enforce official animation system usage
+globs: src/**/*.{ts,tsx,css}
+alwaysApply: false
+---
+
+# Animation Development Standards
+
+Follow `docs/components/official-animation-system.md`.
+
+Rules:
+
+- Use CSS/Tailwind transitions for hover, focus, active and simple microinteractions.
+- Use Framer Motion for entrance, reveal and declarative stagger.
+- Use GSAP ScrollTrigger only for scrub, pinning or complex scroll timelines.
+- Never use two engines for the same effect in one component.
+- Keep variants in `src/lib/motion.ts`.
+- Keep reusable animation wrappers in `src/components/animations/`.
+- Import GSAP only through `loadGsapScrollTrigger()` from `src/lib/gsap.ts`.
+- Respect `prefers-reduced-motion` and `useReducedMotion`.
+- Animate `opacity`, `transform` and `scale`; avoid layout properties.
+- Do not turn an entire section into a Client Component just for a small animation.

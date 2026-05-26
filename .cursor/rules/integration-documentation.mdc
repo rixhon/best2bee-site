@@ -1,0 +1,28 @@
+---
+description: Document every new external or internal integration
+globs: src/lib/**/*.ts,src/hooks/**/*.ts,src/components/forms/**/*.tsx,.env.example,package.json
+alwaysApply: false
+---
+
+# Integration Documentation
+
+When adding or changing an integration, document it before finishing.
+
+Documentation must include:
+
+- objective and owner;
+- required dependencies;
+- required environment variables;
+- setup steps;
+- local validation steps;
+- production/deploy considerations;
+- troubleshooting;
+- rollback or disable strategy when relevant.
+
+Use existing docs when possible:
+
+- Figma MCP: `docs/figma-mcp.md`
+- Deploy/Vercel: `docs/deploy-vercel.md`
+- Forms/leads or Calendly: create or update the closest relevant docs file.
+
+Also update `.env.example` when a public or server environment variable is introduced.

@@ -1,4 +1,5 @@
 import type { ButtonHTMLAttributes } from "react";
+import { cx } from "@/lib/styles";
 
 type ButtonVariant = "primary" | "ghost" | "ink";
 type ButtonSize = "sm" | "md" | "lg";
@@ -30,14 +31,12 @@ export function buttonClassName({
   size?: ButtonSize;
   variant?: ButtonVariant;
 } = {}) {
-  return [
+  return cx(
     "inline-flex items-center justify-center gap-[10px] rounded-b2b-pill font-medium leading-none transition-[transform,box-shadow,filter] duration-[var(--b2b-dur-fast)] ease-[var(--b2b-ease-out)] hover:-translate-y-px hover:brightness-[1.04] hover:shadow-[0_14px_36px_rgba(225,113,0,.35),0_8px_18px_rgba(15,23,42,.16)] active:translate-y-0 active:brightness-[.94] disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-[.55] disabled:shadow-none",
     variantClasses[variant],
     sizeClasses[size],
     className,
-  ]
-    .filter(Boolean)
-    .join(" ");
+  );
 }
 
 export function Button({

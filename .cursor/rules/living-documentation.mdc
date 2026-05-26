@@ -1,0 +1,19 @@
+---
+description: Keep project documentation alive during every meaningful change
+alwaysApply: true
+---
+
+# Living Documentation
+
+When implementing a meaningful change, update documentation in the same task.
+
+Use this checklist before finishing:
+
+- New feature: update `docs/current-state.md`, relevant `docs/*.md`, and `CHANGELOG.md`.
+- New component: document purpose, usage pattern, and location in `docs/components/README.md`.
+- Structural change: create or update an ADR in `docs/architecture/decisions/`.
+- Important behavior change: add an `Unreleased` entry to `CHANGELOG.md`.
+- New visual pattern or token: update `docs/design-system/README.md`, `docs/design-system/final-tokens.md`, and, if needed, `src/data/design-system.md`.
+- New integration: document setup, variables, validation, troubleshooting, and ownership.
+
+Prefer updating existing docs over creating duplicate documentation.

@@ -1,0 +1,23 @@
+---
+description: Enforce TypeScript standards for project source files
+globs: src/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# TypeScript Standards
+
+Follow `docs/code-standards.md` and the architecture docs.
+
+Rules:
+
+- Do not use `any` unless there is no safe alternative and the reason is clear.
+- Prefer local types for local contracts.
+- Promote types to `src/types/` only when shared across modules.
+- Use explicit props types named `{ComponentName}Props`.
+- Avoid generic `config`, `data`, or `options` props unless the shape is typed and meaningful.
+- Avoid ambiguous booleans like `special`, `active`, or `mode`.
+- Use union types for variants and sizes.
+- Use `as const` for static data when values should remain literal.
+- Do not hide side effects inside visual components.
+- Keep functions small and named by behavior.
+- Run `npm run typecheck` after meaningful TypeScript changes.

@@ -1,0 +1,22 @@
+---
+description: Document every new reusable component and section component
+globs: src/components/**/*.tsx
+alwaysApply: false
+---
+
+# Component Documentation
+
+When creating or significantly changing a component, update `docs/components/README.md`.
+
+Document:
+
+- component name and file path;
+- responsibility;
+- when to use it;
+- important props or variants;
+- Design System tokens or shared helpers it depends on;
+- accessibility concerns, if any.
+
+For complex landing sections, also update `docs/architecture.md` if the section gets a new folder structure or subcomponent pattern.
+
+Keep examples short and tied to real files. Do not document placeholder APIs.

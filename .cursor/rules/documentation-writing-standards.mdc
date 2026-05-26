@@ -1,0 +1,20 @@
+---
+description: Enforce documentation writing and maintenance standards
+globs: docs/**/*.md,README.md,CHANGELOG.md
+alwaysApply: false
+---
+
+# Documentation Writing Standards
+
+Rules:
+
+- Keep documentation concise, actionable and tied to real files.
+- Prefer updating existing docs over creating duplicates.
+- Use ASCII unless a source document already requires non-ASCII.
+- Link related official docs when creating a new strategy document.
+- Mark official architecture documents with `Status: Oficial`.
+- Include date when documenting major decisions or strategies.
+- Use `docs/architecture/decisions/` for ADRs; `docs/adr/` is legacy.
+- Keep `docs/current-state.md` current when project status changes.
+- Keep `CHANGELOG.md` updated through the changelog script.
+- Avoid placeholder APIs, speculative implementation details and fake examples.

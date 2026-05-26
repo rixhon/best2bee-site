@@ -1,0 +1,22 @@
+---
+description: Enforce Design Token usage and token promotion rules
+globs: src/**/*.{tsx,css},tailwind.config.ts
+alwaysApply: false
+---
+
+# Design Token Standards
+
+Follow `docs/design-system/final-tokens.md`.
+
+Rules:
+
+- Prefer existing `--b2b-*` tokens before adding arbitrary Tailwind values.
+- Tailwind maps tokens; it is not the source of truth.
+- Global tokens require reuse or clear semantic meaning.
+- Component-specific Figma values should use component tokens like `--b2b-hero-*`.
+- Do not create token names based only on raw values, such as `--b2b-18px`.
+- Repeated arbitrary values must become a token, helper or component.
+- Keep colors, spacing, radius, shadows, z-index, transitions and typography aligned to the Design System.
+- Update `docs/design-system/final-tokens.md` when promoting tokens.
+- Update `docs/design-system/README.md` when changing reusable visual rules.
+- Do not silently add hardcoded visual constants to shared UI.

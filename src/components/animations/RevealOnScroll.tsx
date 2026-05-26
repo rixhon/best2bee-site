@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type HTMLMotionProps, useReducedMotion } from "framer-motion";
-import { revealOnScroll } from "@/lib/animations";
+import { fadeUp } from "@/lib/motion";
 
 type RevealOnScrollProps = HTMLMotionProps<"div">;
 
@@ -11,7 +11,7 @@ export function RevealOnScroll({ children, ...props }: RevealOnScrollProps) {
   return (
     <motion.div
       initial={shouldReduceMotion ? false : "hidden"}
-      variants={revealOnScroll}
+      variants={fadeUp}
       viewport={{ once: true, margin: "-10% 0px" }}
       whileInView={shouldReduceMotion ? undefined : "visible"}
       {...props}

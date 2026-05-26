@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type HTMLMotionProps, useReducedMotion } from "framer-motion";
-import { fadeIn } from "@/lib/animations";
+import { revealOpacity } from "@/lib/motion";
 
 type FadeInProps = HTMLMotionProps<"div">;
 
@@ -12,7 +12,7 @@ export function FadeIn({ children, ...props }: FadeInProps) {
     <motion.div
       animate={shouldReduceMotion ? false : "visible"}
       initial={shouldReduceMotion ? false : "hidden"}
-      variants={fadeIn}
+      variants={revealOpacity}
       {...props}
     >
       {children}

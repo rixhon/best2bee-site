@@ -8,7 +8,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "adr:new": "node scripts/new-adr.mjs",
+    "changelog:add": "node scripts/changelog.mjs add",
+    "changelog:release": "node scripts/changelog.mjs release"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",

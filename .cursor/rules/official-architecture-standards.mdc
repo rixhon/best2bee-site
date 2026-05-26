@@ -1,0 +1,22 @@
+---
+description: Enforce the official project architecture during all development
+alwaysApply: true
+---
+
+# Official Architecture Standards
+
+Before changing architecture or implementation, follow `docs/architecture/final-architecture.md`.
+
+Core rules:
+
+- Keep `src/app/page.tsx` and `src/app/layout.tsx` as Server Components.
+- Use Server Components by default.
+- Use Client Components only for forms, real interactivity, browser APIs, Framer Motion, GSAP, or embeds.
+- Do not create global providers unless the need is truly cross-cutting.
+- Keep landing sections in `src/components/sections/`.
+- Keep shared UI without domain knowledge in `src/components/ui/`.
+- Keep layout components in `src/components/layout/`.
+- Keep helpers, schemas, loaders and services without UI in `src/lib/`.
+- Keep shared hooks in `src/hooks/`; local one-off hooks can stay inside a section.
+- Use `public/figma/{section}/` for Figma assets.
+- Any structural decision or new long-term pattern requires an ADR.

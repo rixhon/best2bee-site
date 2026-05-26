@@ -1,0 +1,22 @@
+---
+description: Enforce component architecture and composition patterns
+globs: src/components/**/*.tsx
+alwaysApply: false
+---
+
+# Component Development Standards
+
+Follow `docs/components/component-architecture.md`.
+
+Rules:
+
+- Components must have one clear responsibility.
+- Keep props small, explicit and predictable.
+- Prefer composition over abstraction.
+- Create shared UI only after real reuse, usually in two or more sections.
+- `components/ui` cannot import sections, section data, integrations, env vars or Figma-specific assets.
+- Complex sections use a folder with `index.ts`, `{Section}Section.tsx`, subcomponents and `{section}.data.ts`.
+- Section data lists belong in local `*.data.ts` files.
+- Section complex public API exports through local `index.ts`.
+- Prefer semantic HTML: `section`, `article`, `nav`, `dl`, `button`, `a`.
+- New or significantly changed reusable components must update `docs/components/README.md`.

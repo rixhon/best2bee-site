@@ -1,0 +1,28 @@
+---
+description: Enforce naming and import conventions
+globs: src/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# Naming and Imports Standards
+
+Follow `docs/architecture/final-architecture.md`.
+
+Naming:
+
+- Components: `PascalCase.tsx`.
+- Client components: `Component.client.tsx`.
+- Hooks: `useThing.ts`.
+- Data files: `{domain}.data.ts`.
+- Services/helpers: `verbNoun.ts`.
+- Props: `{ComponentName}Props`.
+- Variants: typed unions, not loose strings.
+
+Imports:
+
+- Use alias imports across layers: `@/components/ui/Container`.
+- Use relative imports inside the same section folder.
+- Avoid large global barrels like `src/components/index.ts`.
+- Complex sections may use local `index.ts` as their public API.
+- Do not import from `sections` into `ui`.
+- Do not import React components into `src/lib`.

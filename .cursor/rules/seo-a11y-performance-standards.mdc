@@ -1,0 +1,24 @@
+---
+description: Enforce SEO, accessibility and performance standards
+globs: src/app/**/*.{ts,tsx},src/components/**/*.tsx,next.config.ts
+alwaysApply: false
+---
+
+# SEO, Accessibility and Performance Standards
+
+Follow `docs/architecture/seo-performance-strategy.md`.
+
+Rules:
+
+- Keep the landing static-first whenever possible.
+- Keep public content renderable in the initial HTML.
+- Use one `h1` per page.
+- Sections should use semantic HTML and `aria-labelledby` when titled.
+- Informative images need meaningful `alt`.
+- Decorative images use `alt=""` and `aria-hidden`.
+- Use `next/image` for raster images in React components.
+- Use `priority` only for real above-the-fold LCP candidates.
+- Images below the fold should keep default lazy loading.
+- Reserve image dimensions or aspect ratio to avoid CLS.
+- Third-party scripts must be lazy, isolated, and loaded with `next/script` when added.
+- Do not add analytics until tracking, privacy and consent strategy are clear.

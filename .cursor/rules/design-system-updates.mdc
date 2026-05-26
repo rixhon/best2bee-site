@@ -1,0 +1,20 @@
+---
+description: Keep Design System documentation synced with visual patterns
+globs: src/app/globals.css,tailwind.config.ts,src/components/ui/**/*.tsx,src/components/sections/**/*.tsx,src/data/design-system.md
+alwaysApply: false
+---
+
+# Design System Updates
+
+When adding or changing a reusable visual pattern, update the Design System docs.
+
+Update `docs/design-system/README.md` and `docs/design-system/final-tokens.md` when changing:
+
+- color, typography, spacing, radius, shadow, grid, or breakpoint usage;
+- button, card, input, surface, or section pattern;
+- animation timing, easing, reveal behavior, or motion convention;
+- responsive rules that should be reused.
+
+Update `src/data/design-system.md` only when the official source tokens or rules change.
+
+Do not invent tokens silently. If a needed token is missing, document the recommendation before using a hardcoded value.

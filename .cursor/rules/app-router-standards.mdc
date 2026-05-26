@@ -1,0 +1,20 @@
+---
+description: Enforce Next.js App Router project standards
+globs: src/app/**/*.{ts,tsx},src/components/sections/**/*.tsx
+alwaysApply: false
+---
+
+# App Router Standards
+
+Rules:
+
+- `src/app` owns routes, layouts, metadata, viewport, globals and page composition.
+- Do not place visual section implementation directly in `src/app`.
+- Do not put business logic or large static data in `page.tsx`.
+- `page.tsx` should only compose sections in order.
+- Keep `layout.tsx` responsible for global fonts, metadata and accessibility shell.
+- New public routes need metadata and SEO review.
+- Keep `/` static unless a real dynamic requirement appears.
+- Use Server Components for static sections.
+- Isolate forms, embeds and animation wrappers as Client Components.
+- Any App Router strategy change requires an ADR.

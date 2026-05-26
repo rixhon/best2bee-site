@@ -1,0 +1,22 @@
+---
+description: Enforce responsive implementation standards
+globs: src/**/*.{tsx,css}
+alwaysApply: false
+---
+
+# Responsive Standards
+
+Follow `docs/responsive.md`, `docs/design-system/final-tokens.md`, and `docs/architecture/final-architecture.md`.
+
+Rules:
+
+- Build mobile-first.
+- Validate layouts conceptually at `390px`, `768px`, `1024px`, `1280px`, and `1560px+`.
+- Use `Container` for global horizontal alignment.
+- Use official breakpoints: `tablet`, `laptop`, `desktop`, `wide`.
+- Cards and grids must stack cleanly on mobile.
+- Avoid fixed widths without `max-width`, `min()`, `clamp()`, or responsive variants.
+- Use `clamp()` only when fluid behavior is intentional.
+- Promote repeated responsive `clamp()` values to tokens.
+- Decorative media must not cause horizontal overflow.
+- CTAs need comfortable tap targets on mobile.
