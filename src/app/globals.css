@@ -1,0 +1,182 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+:root {
+  --b2b-honey-300: #FFD24D;
+  --b2b-honey-400: #FFB900;
+  --b2b-honey-500: #FE9A00;
+  --b2b-honey-600: #E17100;
+
+  --b2b-ink-900: #020618;
+  --b2b-slate-700: #314158;
+  --b2b-slate-600: #45556C;
+  --b2b-slate-500: #64748B;
+  --b2b-slate-400: #94A3B8;
+  --b2b-slate-300: #CBD5E1;
+  --b2b-slate-200: #E2E8F0;
+  --b2b-slate-100: #EAF2F8;
+  --b2b-slate-50: #F8FAFC;
+
+  --b2b-bg-base: #FFFFFF;
+  --b2b-bg-soft: #F8FAFC;
+  --b2b-bg-cool: #EEF4FA;
+  --b2b-bg-cool-2: #EAF2F8;
+  --b2b-bg-warm: #FDF6EE;
+
+  --b2b-danger-500: #FF6467;
+  --b2b-info-500: #3B82F6;
+  --b2b-success-500: #16A34A;
+  --b2b-success-bg: #E8F6EE;
+
+  --b2b-glass-strong: linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.52));
+  --b2b-glass-medium: linear-gradient(180deg, rgba(255,255,255,.74), rgba(255,255,255,.42));
+  --b2b-glass-soft: linear-gradient(180deg, rgba(255,255,255,.45), rgba(255,255,255,.22));
+  --b2b-glass-border: 1px solid rgba(255,255,255,.55);
+
+  --b2b-shadow-card: 0 8px 24px rgba(15,23,42,.05), 0 26px 70px rgba(148,163,184,.14);
+  --b2b-shadow-card-sm: 0 4px 12px rgba(15,23,42,.04), 0 12px 36px rgba(148,163,184,.12);
+  --b2b-shadow-button: 0 10px 30px rgba(15,23,42,.18);
+  --b2b-shadow-menu: 0 10px 40px rgba(148,163,184,.16);
+  --b2b-shadow-pill: 0 4px 14px rgba(15,23,42,.06);
+
+  --b2b-font-display: var(--font-space-grotesk), system-ui, sans-serif;
+  --b2b-font-body: var(--font-inter), system-ui, sans-serif;
+  --b2b-font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --b2b-fs-display-xl: 88px;
+  --b2b-fs-display-l: 55.2px;
+  --b2b-fs-display-m: 37.6px;
+  --b2b-fs-heading: 27.2px;
+  --b2b-fs-subheading: 24px;
+  --b2b-fs-body-xl: 22px;
+  --b2b-fs-body-l: 19.2px;
+  --b2b-fs-body: 16px;
+  --b2b-fs-body-sm: 15.68px;
+  --b2b-fs-meta: 14px;
+  --b2b-fs-eyebrow: 13px;
+  --b2b-fs-caption: 11px;
+
+  --b2b-lh-tight: 1.02;
+  --b2b-lh-snug: 1.10;
+  --b2b-lh-normal: 1.55;
+  --b2b-lh-loose: 1.70;
+
+  --b2b-tracking-display: -0.045em;
+  --b2b-tracking-h2: -0.04em;
+  --b2b-tracking-h3: -0.03em;
+  --b2b-tracking-eyebrow: 0.22em;
+
+  --b2b-space-1: 4px;
+  --b2b-space-2: 8px;
+  --b2b-space-3: 12px;
+  --b2b-space-4: 16px;
+  --b2b-space-5: 24px;
+  --b2b-space-6: 32px;
+  --b2b-space-7: 48px;
+  --b2b-space-8: 64px;
+  --b2b-space-9: 80px;
+  --b2b-space-10: 96px;
+  --b2b-space-11: 128px;
+  --b2b-space-12: 160px;
+
+  --b2b-radius-xs: 8px;
+  --b2b-radius-sm: 12px;
+  --b2b-radius-md: 14px;
+  --b2b-radius-lg: 20px;
+  --b2b-radius-xl: 28px;
+  --b2b-radius-2xl: 36px;
+  --b2b-radius-pill: 9999px;
+
+  --b2b-container-max: 1280px;
+  --b2b-container-pad-d: 80px;
+  --b2b-container-pad-t: 48px;
+  --b2b-container-pad-m: 20px;
+  --b2b-section-pad-y: 120px;
+
+  --b2b-ease-out: cubic-bezier(.2,.7,.2,1);
+  --b2b-ease-in-out: cubic-bezier(.65,.05,.36,1);
+  --b2b-dur-fast: 150ms;
+  --b2b-dur-base: 260ms;
+  --b2b-dur-slow: 520ms;
+
+  --b2b-z-base: 0;
+  --b2b-z-decor: 1;
+  --b2b-z-content: 10;
+  --b2b-z-nav: 100;
+  --b2b-z-overlay: 1000;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    min-width: 320px;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    min-height: 100vh;
+    background: var(--b2b-bg-base);
+    color: var(--b2b-ink-900);
+    font-family: var(--b2b-font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  :focus-visible {
+    outline: 3px solid rgba(59,130,246,.45);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .skip-link {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    z-index: 50;
+    transform: translateY(-150%);
+    border-radius: var(--b2b-radius-sm);
+    background: var(--b2b-ink-900);
+    color: var(--b2b-bg-base);
+    padding: 0.75rem 1rem;
+    transition: transform var(--b2b-dur-fast) var(--b2b-ease-out);
+  }
+
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+}
