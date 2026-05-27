@@ -644,8 +644,6 @@ export function ExamplePlaceholder() {
 
 Arquivos:
 
-- `src/components/sections/ProblemSection.tsx`
-- `src/components/sections/SolutionSection.tsx`
 - `src/components/sections/WorkSection.tsx`
 - `src/components/sections/StackSection.tsx`
 - `src/components/sections/SquadsSection.tsx`
@@ -689,10 +687,10 @@ Boas praticas:
 Exemplo:
 
 ```tsx
-import { ProblemSection } from "@/components/sections/ProblemSection";
+import { WorkSection } from "@/components/sections/WorkSection";
 
 export function ExampleLandingSlice() {
-  return <ProblemSection />;
+  return <WorkSection />;
 }
 ```
 
@@ -1148,6 +1146,93 @@ Boas praticas:
 
 - Mantenha a section principal como Server Component.
 - Promova wrappers para `src/components/animations/` apenas se forem reutilizados.
+
+## Solution Section
+
+### `SolutionSection`
+
+Arquivo: `src/components/sections/solution/SolutionSection.tsx`
+
+Objetivo:
+
+- Renderizar a secao `03 Solution Section` implementada a partir do Figma.
+- Compor header, cards de talentos e asset decorativo da abelha.
+
+Comportamento:
+
+- Renderiza `Section` sem spacing padrao para preservar a proporcao do Figma.
+- Usa `SolutionHeader`, `SolutionBee` e `SolutionCards`.
+- Mantem `id="solution"` e `aria-labelledby="solution-title"`.
+- Usa `next/image` para o asset raster decorativo versionado localmente.
+
+Responsividade:
+
+- Header e lede usam `clamp()` para manter hierarquia em desktop, tablet e mobile.
+- Cards empilham no mobile, usam duas colunas em `tablet` e tres colunas em `laptop+`.
+- A abelha decorativa aparece a partir de `laptop` para preservar leitura no mobile/tablet.
+
+Animacoes:
+
+- Usa wrappers locais `SolutionStagger` e `SolutionRevealItem`.
+- Aplica reveal on scroll com fade-up no header e scale-in nos cards/asset decorativo.
+- Aplica flutuacao vertical suave na abelha com Framer Motion.
+- Respeita `prefers-reduced-motion` via `useReducedMotion`.
+
+Dependencias:
+
+- `Container`.
+- `Section`.
+- `GlassCard`.
+- Assets em `public/figma/solution/`.
+
+Boas praticas:
+
+- Mantenha dados de talentos em `solution.data.ts`.
+- Preserve a abelha como imagem decorativa com `alt=""` e `aria-hidden`.
+- Evite promover `SolutionCard` para `ui` ate haver reutilizacao real.
+
+## Work Section
+
+### `WorkSection`
+
+Arquivo: `src/components/sections/work/WorkSection.tsx`
+
+Objetivo:
+
+- Renderizar a secao `04 Work Section` implementada a partir do Figma.
+- Compor header, background cool e timeline alternada de processo.
+
+Comportamento:
+
+- Renderiza `Section` sem spacing padrao para preservar a proporcao do Figma.
+- Usa `WorkBackground`, `WorkHeader` e `WorkTimeline`.
+- Mantem `id="work"` e `aria-labelledby="work-title"`.
+- Renderiza a timeline como `ol/li` com cards `article`.
+
+Responsividade:
+
+- Desktop/tablet usam linha central com cards alternados.
+- Mobile reorganiza a timeline em coluna unica, com linha lateral e cards em largura total.
+- Conteudo permanece dentro do `Container` padrao para manter alinhamento com as secoes anteriores.
+
+Animacoes:
+
+- Usa wrappers locais `WorkStagger` e `WorkRevealItem`.
+- Aplica reveal on scroll com fade-up no header e scale-in nos cards.
+- Respeita `prefers-reduced-motion` via `useReducedMotion`.
+
+Dependencias:
+
+- `Container`.
+- `Section`.
+- `GlassCard`.
+- Dados em `work.data.ts`.
+
+Boas praticas:
+
+- Mantenha etapas do processo em `work.data.ts`.
+- Preserve a timeline como elemento decorativo, sem duplicar informacao acessivel.
+- Promova helpers apenas se o padrao for reutilizado em outra secao.
 
 ### `sections`
 

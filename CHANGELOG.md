@@ -45,6 +45,8 @@ npm run changelog:release -- --version 0.1.0
 
 - Sistema profissional de changelog com registro automatico por script
 - Problem Section implementada a partir do Figma com cards glass, background e animacoes
+- Solution Section implementada a partir do Figma com cards de talentos e asset decorativo
+- Work Section implementada a partir do Figma com timeline responsiva
 
 ### Melhorias
 
@@ -81,6 +83,9 @@ npm run changelog:release -- --version 0.1.0
 - Conteudo da Hero deslocado para mais proximo do menu
 - HeroNavbar fixado no topo durante o scroll
 - Tipografia da Hero ajustada para limitar o H1 a 60px no preview mobile/tablet
+- Alinhamento horizontal das secoes Problem e Solution padronizado pelo mesmo grid
+- Abelha da Solution reposicionada fora do texto com flutuacao suave
+- Abelha da Solution reduzida e deslocada para fora da area de texto
 
 ### Correcoes
 

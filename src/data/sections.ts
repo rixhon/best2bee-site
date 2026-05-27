@@ -18,16 +18,16 @@ export const sections = {
   solution: {
     id: "solution",
     eyebrow: "03 Solution Section",
-    title: "Solution",
-    description: "Placeholder para a secao de solucao aprovada no Figma.",
-    status: "placeholder",
+    title: "Talentos sob demanda",
+    description: "Sessao de solucao com pool de talentos implementada a partir do Figma.",
+    status: "ready",
   },
   work: {
     id: "work",
     eyebrow: "04 Work Section",
-    title: "Work",
-    description: "Placeholder para a secao de processo de trabalho aprovada no Figma.",
-    status: "placeholder",
+    title: "Como funciona",
+    description: "Sessao de processo com timeline implementada a partir do Figma.",
+    status: "ready",
   },
   stack: {
     id: "stack",

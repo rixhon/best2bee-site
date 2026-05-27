@@ -14,8 +14,13 @@ Ultima atualizacao: 2026-05-26
 - Hero Section modularizada em `src/components/sections/hero/`.
 - Problem Section implementada a partir do Figma.
 - Problem Section modularizada em `src/components/sections/problem/`.
+- Solution Section implementada a partir do Figma.
+- Solution Section modularizada em `src/components/sections/solution/`.
+- Work Section implementada a partir do Figma.
+- Work Section modularizada em `src/components/sections/work/`.
 - Assets da Hero versionados em `public/figma/hero/`.
 - Assets da Problem Section versionados em `public/figma/problem/`.
+- Assets da Solution Section versionados em `public/figma/solution/`.
 - Framer Motion configurado com variants reutilizaveis em `src/lib/motion.ts`.
 - GSAP ScrollTrigger preparado com import dinamico SSR-safe.
 - Estrutura de formulario com React Hook Form e Zod preparada.
@@ -42,11 +47,9 @@ Ultima atualizacao: 2026-05-26
 
 ## Em Andamento
 
-- Implementacao visual das secoes abaixo de Problem.
+- Implementacao visual das secoes abaixo de Work.
 - Validacao fina de responsividade entre desktop, tablet e mobile.
 - Evolucao dos placeholders das secoes oficiais:
-  - `SolutionSection`
-  - `WorkSection`
   - `StackSection`
   - `SquadsSection`
   - `SocialSection`
@@ -57,8 +60,6 @@ Ultima atualizacao: 2026-05-26
 
 ## Backlog
 
-- Implementar Solution Section a partir do Figma.
-- Implementar Work Section a partir do Figma.
 - Implementar Stack Section a partir do Figma.
 - Implementar Squads Section a partir do Figma.
 - Implementar Social Section a partir do Figma.
@@ -75,7 +76,7 @@ Ultima atualizacao: 2026-05-26
 ## Bugs Conhecidos
 
 - Nenhum bug funcional confirmado no momento.
-- As secoes abaixo da Hero ainda sao placeholders e nao representam o layout final.
+- As secoes abaixo da Work ainda sao placeholders e nao representam o layout final.
 - A integracao de leads ainda nao possui destino real de envio.
 - A integracao Calendly ainda depende da URL oficial.
 

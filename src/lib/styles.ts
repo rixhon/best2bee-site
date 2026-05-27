@@ -8,6 +8,8 @@ export const layoutClassNames = {
   sectionSpacing: "py-b2b-8 tablet:py-b2b-9 laptop:py-b2b-10",
   responsiveContainer:
     "mx-auto w-full max-w-b2b-container px-[var(--b2b-container-pad-m)] tablet:px-[var(--b2b-container-pad-t)] laptop:px-[64px] desktop:px-[var(--b2b-container-pad-d)]",
+  threeCardGrid:
+    "grid justify-center gap-[clamp(1.25rem,2vw,1.75rem)] tablet:grid-cols-2 laptop:grid-cols-[repeat(3,minmax(0,25.375rem))]",
 };
 
 export const surfaceClassNames = {

@@ -240,6 +240,7 @@ Padrao geral:
 - Tablet: 2 colunas quando fizer sentido.
 - Laptop/Desktop: 3 ou 4 colunas.
 - Gutter desktop recomendado: `24px`.
+- Secoes com tres cards devem reutilizar `layoutClassNames.threeCardGrid` para manter o mesmo eixo horizontal entre grids.
 
 Exemplo:
 
