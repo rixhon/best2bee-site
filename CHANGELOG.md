@@ -47,6 +47,8 @@ npm run changelog:release -- --version 0.1.0
 - Problem Section implementada a partir do Figma com cards glass, background e animacoes
 - Solution Section implementada a partir do Figma com cards de talentos e asset decorativo
 - Work Section implementada a partir do Figma com timeline responsiva
+- Stack Section implementada a partir do Figma com pills de tecnologias
+- Implement Squads Section from Figma with split layout and motion
 
 ### Melhorias
 

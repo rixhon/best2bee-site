@@ -1,0 +1,1 @@
+export { SquadsSection } from "./SquadsSection";

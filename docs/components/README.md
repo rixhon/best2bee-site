@@ -645,8 +645,7 @@ export function ExamplePlaceholder() {
 Arquivos:
 
 - `src/components/sections/WorkSection.tsx`
-- `src/components/sections/StackSection.tsx`
-- `src/components/sections/SquadsSection.tsx`
+- `src/components/sections/squads/`
 - `src/components/sections/SocialSection.tsx`
 - `src/components/sections/ComplianceSection.tsx`
 - `src/components/sections/CTASection.tsx`
@@ -1233,6 +1232,96 @@ Boas praticas:
 - Mantenha etapas do processo em `work.data.ts`.
 - Preserve a timeline como elemento decorativo, sem duplicar informacao acessivel.
 - Promova helpers apenas se o padrao for reutilizado em outra secao.
+
+## Stack Section
+
+### `StackSection`
+
+Arquivo: `src/components/sections/stack/StackSection.tsx`
+
+Objetivo:
+
+- Renderizar a secao `05 Stack Section` implementada a partir do Figma.
+- Compor header, background honeycomb e pills de tecnologias.
+
+Comportamento:
+
+- Renderiza `Section` sem spacing padrao para preservar a proporcao do Figma.
+- Usa `StackBackground`, `StackHeader` e `StackPills`.
+- Mantem `id="stack"` e `aria-labelledby="stack-title"`.
+- Usa `next/image` para o fundo honeycomb versionado localmente.
+
+Responsividade:
+
+- Header e lede usam `clamp()` para manter hierarquia em desktop, tablet e mobile.
+- Pills organizam-se em duas linhas centralizadas no desktop/tablet e quebram naturalmente no mobile.
+- Conteudo permanece dentro do `Container` padrao para manter alinhamento com as secoes anteriores.
+
+Animacoes:
+
+- Usa wrappers locais `StackStagger` e `StackRevealItem`.
+- Aplica reveal on scroll com fade-up no header e scale-in nas pills.
+- Hover sutil nas pills com translate e sombra.
+- Respeita `prefers-reduced-motion` via `useReducedMotion`.
+
+Dependencias:
+
+- `Container`.
+- `Section`.
+- Assets em `public/figma/stack/`.
+- Dados em `stack.data.ts`.
+
+Boas praticas:
+
+- Mantenha tecnologias em `stack.data.ts`.
+- Preserve pills como elementos semanticos em listas.
+- Evite promover `StackPill` para `ui` ate haver reutilizacao real.
+
+## Squads Section
+
+### `SquadsSection`
+
+Arquivo: `src/components/sections/squads/SquadsSection.tsx`
+
+Objetivo:
+
+- Renderizar a secao `06 Squads Section` implementada a partir do Figma.
+- Compor header, grid 2x2 de beneficios e visual lateral da equipe.
+
+Comportamento:
+
+- Renderiza `Section` sem spacing padrao para preservar a proporcao do Figma.
+- Usa layout split em `laptop+` com conteudo a esquerda e imagem a direita.
+- Mantem `id="squads"` e `aria-labelledby="squads-title"`.
+- Usa `next/image` para fundo honeycomb e foto da equipe versionados localmente.
+
+Responsividade:
+
+- Header e lede usam `clamp()` para manter hierarquia em desktop, tablet e mobile.
+- Grid de cards colapsa para 1 coluna no mobile e 2 colunas a partir de `tablet`.
+- Imagem da equipe empilha abaixo do conteudo no mobile e fixa na coluna direita no desktop.
+- Conteudo permanece dentro do `Container` padrao para manter alinhamento com as secoes anteriores.
+
+Animacoes:
+
+- Usa wrappers locais `SquadsStagger` e `SquadsRevealItem`.
+- Aplica reveal on scroll com fade-up no header, scale-in nos cards e fade na imagem.
+- Hover sutil nos cards com translate e sombra.
+- Respeita `prefers-reduced-motion` via `useReducedMotion`.
+
+Dependencias:
+
+- `Container`.
+- `Section`.
+- `GlassCard`.
+- Assets em `public/figma/squads/`.
+- Dados em `squads.data.ts`.
+
+Boas praticas:
+
+- Mantenha beneficios em `squads.data.ts`.
+- Preserve cards como `article` dentro de lista semantica.
+- Evite promover `SquadsCard` para `ui` ate haver reutilizacao real.
 
 ### `sections`
 

@@ -18,6 +18,12 @@ Ultima atualizacao: 2026-05-26
 - Solution Section modularizada em `src/components/sections/solution/`.
 - Work Section implementada a partir do Figma.
 - Work Section modularizada em `src/components/sections/work/`.
+- Stack Section implementada a partir do Figma.
+- Stack Section modularizada em `src/components/sections/stack/`.
+- Squads Section implementada a partir do Figma.
+- Squads Section modularizada em `src/components/sections/squads/`.
+- Assets da Squads Section versionados em `public/figma/squads/`.
+- Assets da Stack Section versionados em `public/figma/stack/`.
 - Assets da Hero versionados em `public/figma/hero/`.
 - Assets da Problem Section versionados em `public/figma/problem/`.
 - Assets da Solution Section versionados em `public/figma/solution/`.
@@ -47,11 +53,9 @@ Ultima atualizacao: 2026-05-26
 
 ## Em Andamento
 
-- Implementacao visual das secoes abaixo de Work.
+- Implementacao visual das secoes abaixo de Squads.
 - Validacao fina de responsividade entre desktop, tablet e mobile.
 - Evolucao dos placeholders das secoes oficiais:
-  - `StackSection`
-  - `SquadsSection`
   - `SocialSection`
   - `ComplianceSection`
   - `CTASection`
@@ -60,8 +64,6 @@ Ultima atualizacao: 2026-05-26
 
 ## Backlog
 
-- Implementar Stack Section a partir do Figma.
-- Implementar Squads Section a partir do Figma.
 - Implementar Social Section a partir do Figma.
 - Implementar Compliance Section a partir do Figma.
 - Implementar CTA Section a partir do Figma.
@@ -76,7 +78,7 @@ Ultima atualizacao: 2026-05-26
 ## Bugs Conhecidos
 
 - Nenhum bug funcional confirmado no momento.
-- As secoes abaixo da Work ainda sao placeholders e nao representam o layout final.
+- As secoes abaixo de Squads ainda sao placeholders e nao representam o layout final.
 - A integracao de leads ainda nao possui destino real de envio.
 - A integracao Calendly ainda depende da URL oficial.
 

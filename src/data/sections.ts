@@ -32,16 +32,16 @@ export const sections = {
   stack: {
     id: "stack",
     eyebrow: "05 Stack Section",
-    title: "Stack",
-    description: "Placeholder para a secao de tecnologias e stack aprovada no Figma.",
-    status: "placeholder",
+    title: "Domínio das principais tecnologias",
+    description: "Sessao de stack tecnologica implementada a partir do Figma.",
+    status: "ready",
   },
   squads: {
     id: "squads",
     eyebrow: "06 Squads Section",
-    title: "Squads",
-    description: "Placeholder para a secao de squads aprovada no Figma.",
-    status: "placeholder",
+    title: "Escale do developer individual ao time completo",
+    description: "Sessao de squads completos com grid de beneficios e visual lateral implementada a partir do Figma.",
+    status: "ready",
   },
   social: {
     id: "social",
