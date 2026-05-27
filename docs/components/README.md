@@ -646,7 +646,7 @@ Arquivos:
 
 - `src/components/sections/WorkSection.tsx`
 - `src/components/sections/squads/`
-- `src/components/sections/SocialSection.tsx`
+- `src/components/sections/social/`
 - `src/components/sections/ComplianceSection.tsx`
 - `src/components/sections/CTASection.tsx`
 
@@ -1322,6 +1322,51 @@ Boas praticas:
 - Mantenha beneficios em `squads.data.ts`.
 - Preserve cards como `article` dentro de lista semantica.
 - Evite promover `SquadsCard` para `ui` ate haver reutilizacao real.
+
+## Social Section
+
+### `SocialSection`
+
+Arquivo: `src/components/sections/social/SocialSection.tsx`
+
+Objetivo:
+
+- Renderizar a secao `07 Social Section` implementada a partir do Figma.
+- Compor header centralizado, pills de empresas e cards de depoimentos.
+
+Comportamento:
+
+- Renderiza `Section` sem spacing padrao para preservar a proporcao do Figma.
+- Usa `SocialBackground`, `SocialHeader`, `SocialCompanies` e `SocialTestimonials`.
+- Mantem `id="social"` e `aria-labelledby="social-title"`.
+- Usa `next/image` para o fundo com foto desfocada versionada localmente.
+
+Responsividade:
+
+- Header e eyebrow usam `clamp()` para manter hierarquia em desktop, tablet e mobile.
+- Pills de empresas quebram em multiplas linhas no mobile com alinhamento central.
+- Cards de depoimento usam `layoutClassNames.threeCardGrid` (1 col mobile, 2 tablet, 3 laptop+).
+
+Animacoes:
+
+- Usa wrappers locais `SocialStagger` e `SocialRevealItem`.
+- Aplica reveal on scroll com fade-up no header e empresas, scale-in nos depoimentos.
+- Hover sutil nos cards e pills com translate e sombra.
+- Respeita `prefers-reduced-motion` via `useReducedMotion`.
+
+Dependencias:
+
+- `Container`.
+- `Section`.
+- `GlassCard`.
+- Assets em `public/figma/social/`.
+- Dados em `social.data.ts`.
+
+Boas praticas:
+
+- Mantenha empresas e depoimentos em `social.data.ts`.
+- Preserve estrelas com `role="img"` e label acessivel.
+- Evite promover `SocialTestimonialCard` para `ui` ate haver reutilizacao real.
 
 ### `sections`
 

@@ -23,6 +23,13 @@ Ultima atualizacao: 2026-05-26
 - Squads Section implementada a partir do Figma.
 - Squads Section modularizada em `src/components/sections/squads/`.
 - Assets da Squads Section versionados em `public/figma/squads/`.
+- Social Section implementada a partir do Figma.
+- Social Section modularizada em `src/components/sections/social/`.
+- Compliance Section implementada a partir do Figma.
+- Compliance Section modularizada em `src/components/sections/compliance/`.
+- CTA Section implementada a partir do Figma.
+- CTA Section modularizada em `src/components/sections/cta/`.
+- Assets da Social Section versionados em `public/figma/social/`.
 - Assets da Stack Section versionados em `public/figma/stack/`.
 - Assets da Hero versionados em `public/figma/hero/`.
 - Assets da Problem Section versionados em `public/figma/problem/`.
@@ -53,20 +60,12 @@ Ultima atualizacao: 2026-05-26
 
 ## Em Andamento
 
-- Implementacao visual das secoes abaixo de Squads.
 - Validacao fina de responsividade entre desktop, tablet e mobile.
-- Evolucao dos placeholders das secoes oficiais:
-  - `SocialSection`
-  - `ComplianceSection`
-  - `CTASection`
 - Definicao final da integracao de captura de leads.
 - Definicao final da URL oficial do Calendly.
 
 ## Backlog
 
-- Implementar Social Section a partir do Figma.
-- Implementar Compliance Section a partir do Figma.
-- Implementar CTA Section a partir do Figma.
 - Conectar formulario de leads a endpoint, CRM ou backend escolhido.
 - Conectar Calendly com URL oficial.
 - Adicionar estados de loading, sucesso e erro no formulario.
@@ -78,7 +77,6 @@ Ultima atualizacao: 2026-05-26
 ## Bugs Conhecidos
 
 - Nenhum bug funcional confirmado no momento.
-- As secoes abaixo de Squads ainda sao placeholders e nao representam o layout final.
 - A integracao de leads ainda nao possui destino real de envio.
 - A integracao Calendly ainda depende da URL oficial.
 

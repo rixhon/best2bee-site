@@ -49,6 +49,8 @@ npm run changelog:release -- --version 0.1.0
 - Work Section implementada a partir do Figma com timeline responsiva
 - Stack Section implementada a partir do Figma com pills de tecnologias
 - Implement Squads Section from Figma with split layout and motion
+- Implement Social Section from Figma with testimonials and company pills
+- Implement CTA Section from Figma with modular structure and motion reveal
 
 ### Melhorias
 
@@ -92,6 +94,7 @@ npm run changelog:release -- --version 0.1.0
 ### Correcoes
 
 - Marcador central do indicador de scroll da Hero restaurado
+- HeroNavbar permanece flutuante sobre todas as secoes durante o scroll
 
 ## [0.1.0] - 2026-05-26
 

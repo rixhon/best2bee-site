@@ -5,7 +5,6 @@ import { Container } from "@/components/ui/Container";
 import { staggerContainer } from "@/lib/motion";
 import { HeroBackground } from "./HeroBackground";
 import { HeroContent } from "./HeroContent";
-import { HeroNavbar } from "./HeroNavbar";
 
 export function HeroSection() {
   const shouldReduceMotion = useReducedMotion();
@@ -17,7 +16,6 @@ export function HeroSection() {
       id="hero"
     >
       <HeroBackground />
-      <HeroNavbar />
 
       <Container className="relative z-10 min-h-[720px] pb-b2b-8 pt-[48px] tablet:min-h-[780px] tablet:pt-[80px] laptop:min-h-[720px] laptop:pt-[clamp(118px,calc(23.5vw-100px),202px)] desktop:min-h-[900px] desktop:px-0 wide:min-h-[960px]">
         <motion.div

@@ -3,7 +3,7 @@ import { squadsSectionContent } from "./squads.data";
 export function SquadsHeader() {
   return (
     <header className="relative z-10 max-w-[42rem] desktop:max-w-[57rem] wide:max-w-[72rem]">
-      <p className="font-mono text-[clamp(1rem,2vw,1.875rem)] font-normal uppercase leading-none tracking-[0.15125rem] text-honey-500">
+      <p className="font-mono text-[clamp(1rem,2vw,1.8rem)] font-normal uppercase leading-none tracking-[0.15125rem] text-honey-500">
         {squadsSectionContent.eyebrow}
       </p>
       <h2
