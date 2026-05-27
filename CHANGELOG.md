@@ -90,6 +90,7 @@ npm run changelog:release -- --version 0.1.0
 - Alinhamento horizontal das secoes Problem e Solution padronizado pelo mesmo grid
 - Abelha da Solution reposicionada fora do texto com flutuacao suave
 - Abelha da Solution reduzida e deslocada para fora da area de texto
+- Ajusta tipografia de titulos de secao e eyebrow de compliance conforme preview
 
 ### Correcoes
 

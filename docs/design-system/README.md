@@ -58,7 +58,7 @@ No codigo, as fontes sao carregadas em `src/app/layout.tsx` via `next/font` e ex
 | Token | Valor | Uso |
 |---|---:|---|
 | `--b2b-fs-display-xl` | `88px` | H1 da Hero |
-| `--b2b-fs-display-l` | `55.2px` | H2 de secao |
+| `--b2b-fs-display-l` | `52px` | H2 de secao |
 | `--b2b-fs-display-m` | `37.6px` | Sub-secoes |
 | `--b2b-fs-heading` | `27.2px` | H3 de cards |
 | `--b2b-fs-subheading` | `24px` | Titulos menores |

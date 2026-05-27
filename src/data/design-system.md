@@ -109,7 +109,7 @@ Três famílias:
 | Estilo | Família | Peso | Tamanho | Line-height | Tracking | Uso |
 |---|---|---|---|---|---|---|
 | **Display XL** | Space Grotesk | 300 | `88px` | 1.02 | `-0.045em` | H1 do hero |
-| **Display L**  | Space Grotesk | 300 | `55.2px` | 1.08 | `-0.04em` | H2 de seção |
+| **Display L**  | Space Grotesk | 300 | `52px` | 1.08 | `-0.04em` | H2 de seção |
 | **Display M**  | Space Grotesk | 300 | `37.6px` | 1.10 | `-0.035em` | Sub-seção |
 | **Heading**    | Space Grotesk | 500 | `27.2px` | 1.08 | `-0.03em`  | H3 de cards |
 | **Subheading** | Space Grotesk | 500 | `24px` | 1.20 | `-0.025em` | Nomes / títulos de talento |
@@ -632,7 +632,7 @@ Convenção: **todo `<section>` tem um modifier `.b2b-{nome-da-seção}` + `<div
   letter-spacing: -0.045em;
 }
 .b2b-h2{
-  font-size: clamp(32px, 4.4vw, 55.2px);
+  font-size: clamp(32px, 4.4vw, 52px);
   line-height: 1.08;
   letter-spacing: -0.04em;
 }
@@ -822,7 +822,7 @@ Cole este bloco em `tokens.css` e importe em `main.css`. Todas as variáveis sã
   --b2b-font-mono:    "JetBrains Mono", ui-monospace, monospace;
 
   --b2b-fs-display-xl: 88px;
-  --b2b-fs-display-l:  55.2px;
+  --b2b-fs-display-l:  52px;
   --b2b-fs-display-m:  37.6px;
   --b2b-fs-heading:    27.2px;
   --b2b-fs-subheading: 24px;

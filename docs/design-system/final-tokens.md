@@ -237,7 +237,7 @@ Tokens oficiais:
 
 ```css
 --b2b-fs-display-xl: 88px;
---b2b-fs-display-l: 55.2px;
+--b2b-fs-display-l: 52px;
 --b2b-fs-display-m: 37.6px;
 --b2b-fs-heading: 27.2px;
 --b2b-fs-subheading: 24px;

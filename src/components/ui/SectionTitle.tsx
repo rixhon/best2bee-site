@@ -8,7 +8,7 @@ export function SectionTitle({ eyebrow, title, description }: SectionTitleProps)
   return (
     <div className="max-w-2xl">
       {eyebrow ? (
-        <p className="font-mono text-eyebrow uppercase text-honey-500">
+        <p className="font-mono text-[clamp(1rem,2vw,1.8rem)] font-normal uppercase leading-none tracking-[0.15125rem] text-honey-500">
           {eyebrow}
         </p>
       ) : null}

@@ -8,7 +8,7 @@ export function CTAContent() {
       <p className="font-mono text-eyebrow uppercase text-honey-500">Pronto para comecar?</p>
 
       <h2
-        className="mt-b2b-5 font-display text-[clamp(2.5rem,5.8vw,4.375rem)] font-light leading-[1.03] tracking-[var(--b2b-tracking-display)] text-ink-900"
+        className="mt-b2b-5 font-display text-[clamp(2.5rem,5.8vw,58px)] font-light leading-[1.03] tracking-[var(--b2b-tracking-display)] text-ink-900"
         id="cta-title"
       >
         <span className="font-medium">Pronto</span> para escalar sua equipe?
